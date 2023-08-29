@@ -1,0 +1,31 @@
+{#
+/**
+ * @file
+ * HeroDevs Vue Page Template
+ *
+ * Available variables:
+ *   - vue_cdn
+ *
+ * @ingroup themeable
+ */
+#}
+<h3>Drupal PHP page:</h3>
+Fetching Vue from: <a href="{{vue_cdn}}">{{vue_cdn}}</a>
+
+<h3>Vue App</h3>
+<script src="{{vue_cdn}}"></script>
+<div id="app">
+  <p v-html="message">
+  </p>
+</div>
+<script>
+  const { createApp, ref } = Vue
+  createApp({
+    setup() {
+      const message = ref('This is an example Vue app!')
+      return {
+        message
+      }
+    }
+  }).mount('#app')
+</script>

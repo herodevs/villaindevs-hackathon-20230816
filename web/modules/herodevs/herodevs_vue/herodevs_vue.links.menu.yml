@@ -1,0 +1,5 @@
+herodevs_vue.admin:
+  title: 'HeroDevs Vue settings'
+  description: 'Configure settings for the HeroDevs Vue module.'
+  route_name: herodevs_vue.admin
+  parent: 'system.admin_config_development'

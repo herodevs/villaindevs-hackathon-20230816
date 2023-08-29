@@ -1,0 +1,14 @@
+herodevs_vue.home:
+  path: '/herodevs/home'
+  defaults:
+    _controller: '\Drupal\herodevs_vue\Controller\HeroDevsVueController::home'
+  requirements:
+    _permission: 'HeroDevs Vue'
+
+herodevs_vue.admin:
+  path: '/admin/config/development/herodevs_vue'
+  defaults:
+    _form: '\Drupal\herodevs_vue\Form\HeroDevsVueForm'
+    _title: 'HeroDevs Vue settings'
+  requirements:
+    _permission: 'administer site configuration'

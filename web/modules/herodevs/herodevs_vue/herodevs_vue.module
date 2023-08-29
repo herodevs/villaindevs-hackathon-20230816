@@ -1,0 +1,33 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function herodevs_vue_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.herodevs_vue':
+      return t('
+        <h2>HeroDevs Vue 3 Integration for Drupal.</h2>
+        <h3>Instructions</h3>
+        <p>This is a demo Help Page!</p>
+      ');
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function herodevs_vue_theme($existing, $type, $theme, $path) {
+  $variables = [
+    'herodevs_vue' => [
+      'variables' => [
+        'vue_cdn' => NULL,
+      ],
+      'template' => 'herodevs_vue',
+    ],
+  ];
+  return $variables;
+}
+

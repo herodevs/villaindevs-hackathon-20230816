@@ -1,0 +1,3 @@
+herodevs_vue:
+  page_title: "Hero Devs Vue"
+  vue_cdn: "https://unpkg.com/vue@3/dist/vue.global.js"

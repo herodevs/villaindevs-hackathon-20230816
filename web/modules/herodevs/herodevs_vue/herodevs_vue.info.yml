@@ -1,0 +1,8 @@
+name: Hero Devs Vue
+description: Creates an example page with CDN support of Vue 3
+package: custom
+
+type: module
+core_version_requirement: ^9.4 || ^10
+
+configure: herodevs_vue.admin
