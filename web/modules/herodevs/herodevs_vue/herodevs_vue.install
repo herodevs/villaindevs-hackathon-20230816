@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Installation functions for HeroDevs Vue Module
+ */
+
+use Drupal\user\RoleInterface;
+
+/**
+ * Implements hook_install().
+ */
+function herodevs_vue_install() {
+  user_role_change_permissions(RoleInterface::ANONYMOUS_ID, array(
+    'HeroDevs Vue' => TRUE,
+  ));
+}
